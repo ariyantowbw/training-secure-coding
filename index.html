@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Lab Secure Coding</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .list-lab:hover {
+            background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
+            color: #fff !important;
+        }
+
+        a, a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<main class="container py-5">
+    <h2 style="color:#1239b5">Lab Secure Coding - CyberAcademyID</h2>
+
+    <p>Lab Secure Coding dirancang untuk mengajarkan pengembang dan profesional keamanan cara mengenali, menganalisis,
+        dan mengatasi kerentanan pada aplikasi perangkat lunak.</p>
+    <hr class="my-5">
+
+    <div class="row" data-masonry='{"percentPosition": true }'>
+        <!--SQL Injection-->
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+            <a href="../sql-injection/">
+                <div class="card list-lab">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL Injection</h5>
+                        <p class="card-text">jenis kerentanan di mana penyerang dapat menyisipkan perintah SQL berbahaya
+                            melalui input pengguna yang tidak tervalidasi, untuk mengeksploitasi basis data
+                            aplikasi.</p>
+                        <p class="card-text"><small>Total: 2 Lab</small></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--    NoSQL Injection-->
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+            <a href="../nosql-injection/">
+                <div class="card list-lab">
+                    <div class="card-body">
+                        <h5 class="card-title">NoSQL Injection</h5>
+                        <p class="card-text">jenis kerentanan di mana penyerang dapat menyisipkan perintah No SQL
+                            berbahaya
+                            melalui input pengguna yang tidak tervalidasi, untuk mengeksploitasi basis data
+                            aplikasi.</p>
+                        <p class="card-text"><small>Total: 1 Lab</small></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--    Authentication-->
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+            <a href="../authentication">
+                <div class="card list-lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Authentication</h5>
+                        <p class="card-text">Jenis kerentanan dimana penyerang dapat memanipulasi proses otentikasi.</p>
+                        <p class="card-text"><small>Total: 3 Lab</small></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--    LFI-->
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+            <a href="../lfi/">
+                <div class="card list-lab">
+                    <div class="card-body">
+                        <h5 class="card-title">LFI (Local File Inclusion)</h5>
+                        <p class="card-text">Jenis serangan di mana penyerang dapat memanfaatkan kerentanannya untuk
+                            menyertakan file lokal yang ada di server web</p>
+                        <p class="card-text"><small>Total: 2 Lab</small></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--    File Upload-->
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+            <a href="../file-upload/">
+                <div class="card list-lab">
+                    <div class="card-body">
+                        <h5 class="card-title">File Upload</h5>
+                        <p class="card-text">jenis kerentanan di mana penyerang dapat mengupload file yang tipe ekstension apapun.</p>
+                        <p class="card-text"><small>Total: 2 Lab</small></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--    XSS-->
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+            <a href="../xss/">
+                <div class="card list-lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Cross Site Scripting (XSS)</h5>
+                        <p class="card-text">jenis kerentanan di mana penyerang dapat menyisipkan perintah
+                            berbahaya yang dapat mencuri cookie korban.</p>
+                        <p class="card-text"><small>Total: 1 Lab</small></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--    IDOR-->
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+            <a href="../idor/">
+                <div class="card list-lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Insecure Direct Object Reference (IDOR)</h5>
+                        <p class="card-text">Jenis kerentanan di mana penyerang dapat mengakses atau memanipulasi data berdasarkan reference yang dikirim oleh klien.</p>
+                        <p class="card-text"><small>Total: 3 Lab</small></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</main>
+<script async src="assets/js/masonry.pkgd.min.js"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

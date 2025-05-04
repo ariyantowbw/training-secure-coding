@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lab_secure_coding
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8003:80"
+    depends_on:
+      - db_secure_coding
+
+  db_secure_coding:
+    image: mysql:8.0
+    container_name: mysql_db_secure_coding
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: secure_coding
+    volumes:
+      - db_data_secure_coding:/var/lib/mysql
+      - ./secure_coding.sql:/docker-entrypoint-initdb.d/database.sql:ro
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin_secure_coding
+    depends_on:
+      - db_secure_coding
+    ports:
+      - "9003:80"  
+    environment:
+      PMA_HOST: db_secure_coding
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+
+volumes:
+  db_data_secure_coding:
