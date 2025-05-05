@@ -2,7 +2,7 @@
 $servername = "mysql_db_secure_coding"; // Ganti dengan server database Anda jika perlu
 $username = "root"; // Ganti dengan username database Anda
 $password = "root"; // Ganti dengan password database Anda
-$dbname = "db_secure_coding"; // Nama database yang dibuat sebelumnya
+$dbname = "secure_coding"; // Nama database yang dibuat sebelumnya
 $port = 3306;
 // Membuat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
