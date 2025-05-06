@@ -10,8 +10,9 @@ if (isset($_COOKIE[$accessLogin])) {
     $cookieValue = $_COOKIE[$accessLogin];
 } else {
     $accessLogin = bin2hex(random_bytes(16));
-    setcookie('accessLogin', $accessLogin, time() + (86400 * 30), "/"); // Cookie berlaku selama 30 hari
+    setcookie('accessLogin', $accessLogin, time() + (86400 * 30), "/", $_SERVER['SERVER_NAME'], true, true); // Cookie berlaku selama 30 hari
 }
+
 
 $queryToken = "SELECT u.username 
                 FROM users u
@@ -20,7 +21,7 @@ $queryToken = "SELECT u.username
 
 $resultQueryToken = $conn->query($queryToken);
 
-if($resultQueryToken->num_rows > 0){
+if ($resultQueryToken->num_rows > 0) {
     $accessLogin = $cookieValue;
     $isLogin = true;
     $username = $resultQueryToken->fetch_assoc()['username'];

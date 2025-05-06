@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php 
+require '../../connection.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +56,7 @@
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <button type="submit" class="btn btn-primary btn-block" id="tes_btn">Login</button>
                 </form>
 
             </div>
